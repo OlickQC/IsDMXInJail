@@ -5,8 +5,8 @@
       .DESCRIPTION
       Return True if DMX is in Jail
       .EXAMPLE
-      if (Get-DMXPrisonStatut -eq $True){Write-Host("DMX est en prison!")}
-      else{Write-Host("DMX est libre!")}
+      if (IsDMXInJail -eq $True){Write-Host("DMX is in jail!")}
+      else{Write-Host("DMX is free!")}
       #>
     $IsDmxInJail = Invoke-WebRequest -Uri 'http://isdmxinjail.com/'
     foreach($ligne in $IsDmxInJail.tostring().split("`n"))
