@@ -1,4 +1,4 @@
-﻿function IsDMXInJail {
+﻿function Get-DMXJailStatus {
       <#
       .SYNOPSIS
       Is DMX in jail ? Good question!
